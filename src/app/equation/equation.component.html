@@ -1,0 +1,11 @@
+<form [formGroup]="mathForm">
+    {{ valueOne }} + {{ valueTwo }} =
+    <input formControlName="answer" />
+</form>
+
+{{ secondsPerSolution | number: '1.1-3'}} seconds per solution.
+
+<hr />
+<div>Form is valid: {{ mathForm.valid }}</div>
+<div>Form values: {{ mathForm.value | json }}</div>
+<div>Errors: {{ mathForm.errors | json }}</div>
