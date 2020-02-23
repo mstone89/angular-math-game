@@ -9,7 +9,7 @@ import { FormGroup, FormControl } from '@angular/forms';
     styleUrls: ['./equation.component.css']
 })
 export class EquationComponent implements OnInit {
-    secondsPerSolution: number = 0;
+    secondsPerSolution = 0;
     mathForm: FormGroup = new FormGroup(
         {
             valueOne: new FormControl(this.randomNumber()),
