@@ -1,6 +1,6 @@
 <form [formGroup]="mathForm">
     <div class="equation">{{ valueOne }} + {{ valueTwo }} =</div>
-    <input formControlName="answer" />
+    <input appAnswerHighlight formControlName="answer" />
 </form>
 <div class="stats">
     {{ secondsPerSolution | number: '1.1-3'}} seconds per solution.
